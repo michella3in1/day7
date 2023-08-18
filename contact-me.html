@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>contact</title>
+        <link rel="icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
+        <section class="header">
+        <nav>
+            <div class="left">
+                <a href="#">
+                    <img src="assets/images/logo.png">
+                </a>
+                <ul>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Pembatas -->
+            <div class="right">
+                <a href="contact-me.html">Contact Me</a>
+            </div>
+        </nav>
+        <div class="first-layer">
+            <form action="" class="former">
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" >
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="text" >
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                            <option hidden>Select</option>
+                            <option>Collab</option>
+                            <option>Say hi</option>
+                            <option>Indomart Bag</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="button" onclick="submitData()"> Submit </button>
+            </form>
+        </div>
+    </section>
+    <script src="assets/js/contact-me.js"> </script>
+    </body>
+</html>

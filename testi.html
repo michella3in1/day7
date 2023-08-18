@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/testi.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="index.html">
+            <img src="assets/images/logo.png">
+            </a>
+            <ul>
+                <li>
+                <a class="active" href="index.html" class="home item-collapse">Home</a>
+                </li>
+                <li>
+                <a href="project.html" class="myproject item-collapse">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right item-collapse">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+
+        <div class="right" id="barsmenu">
+            <button
+                style="background-color: transparent; border: none; cursor: pointer"
+                onclick="openHamburger();">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+        <div class="hamburger-nav-container" id="hamburger-nav-container">
+            <a href="index.html">Home</a>
+            <a href="project.html">Project</a>
+            <a href="contact-me.html">Contact</a>
+            <a href="testimonial.html" class="hamburger-active">Testimonials</a>
+        </div>
+
+
+     <!-- Pembatas -->
+
+     <div class="container">
+        <h1>My Testimonial</h1>
+        <section class="testimonials" id="testimonials">
+          <div class="testimoni">
+            <img src="assets/images/gepeng.jpg" alt="">
+            <p class="quote">GEPENG</p>
+            <p class="author">Hakase</p>
+          </div>
+          <div class="testimoni">
+            <img src="assets/images/chill.png" alt="">
+            <p class="quote">Mau jadi direktur atau NEET</p>
+            <p class="author">- Ishigami</p>
+          </div>
+          <div class="testimoni">
+            <img src="assets/images/monja.png" alt="">
+            <p class="quote">ituh cowok lo mon,even better</p>
+            <p class="author">- monja</p>
+          </div>
+        </section>
+      </div>
+    
+      <script src="assets/js/nav.js"></script>
+    </body>
+    
+    </html>

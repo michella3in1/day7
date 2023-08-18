@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="icon" href="assets/images/logo.png">
+        <link rel="stylesheet" href="assets/css/project.css">
+        <link rel="stylesheet" href="assets/css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <a href="#">
+                    <img src="assets/images/logo.png">
+                </a>
+                <ul>
+                    <li>
+                        <a  href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="contact-me.html">Contact Me</a>
+            </div>
+        </nav>
+         <!-- ini form -->
+        <div class="myProject">
+            <div class="myProject-form">
+                <div class="form-container">
+                    <form id="form" onsubmit="addProject(event)">
+                        <h1 >Create Post Project</h1>
+                        <div class="input-title">
+                            <label for="input-project-title" >Project Name</label>
+                            <input type="text" id="input-project-title" />
+                        </div>
+                        <div class="project-date">
+                            <div class="start-date">
+                                <label for="input-project-startDate">Start Date</label>
+                                <input type="date" id="input-project-startDate">
+                            </div>
+                            <div class="end-date">
+                                <label for="input-project-endDate">End Date</label>
+                                <input type="date" id="input-project-endDate">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="input-project-content" >Description</label>
+                            <textarea id="input-project-content"></textarea>
+                        </div>
+                        <div>
+                            <label>Category</label>
+                            <div class="category">
+                                <div class="cate-left">
+                                    <div class="chk-left">
+                                        <input type="checkbox" class="multi-input" >
+                                        <label> Steam</label>
+                                    </div>
+                                    <div class="chk-right">
+                                        <input type="checkbox" class="multi-input">
+                                        <label> Movie</label>
+                                    </div>
+                                </div>
+                                <div class="cate-right">
+                                    <div class="chk-left">
+                                        <input type="checkbox" class="multi-input">
+                                        <label>MMO</label>
+                                    </div>
+                                    <div class="chk-right">
+                                        <input type="checkbox" class="multi-input">
+                                        <label>Sport</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label >Upload Image</label>
+                            <div class="input-project-image-group">
+                                <label for="input-project-image">
+                                    <div>
+                                    <p>Attach File</p>
+                                    </div>        
+                                    <i class="fa-solid fa-paperclip"></i>
+                                </label>
+                                <input type="file" id="input-project-image" hidden />
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" onclick="addProject(event)" >Post Project</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="line"/>
+
+             <!--Dynamic Content-->
+        <div class="project-content">
+                <h1>MY PROJECT</h1>
+                <div id="contents" class="card">
+                    <div class="container-card">
+                    <div class="card-content">
+                       <img src="assets/images/Update invoker.png" alt="invoker">
+                       <h1> 
+                        <a href="project-detail.html" target="_blank>">
+                            Update Invoker
+                        </a>
+                    </h1>
+                    <p>Release Date:2023-08-08</p>
+                    <div id="container-desc">
+                        Reworked Captains Mode Draft Order,
+                        Alternative Cast Abilities,
+                        ITEM UPDATES
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-brands fa-bitcoin"></i>
+                    </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-post">Delete</button>
+                        </div>
+                    </div>  
+                </div>
+
+        
+                <div class="container-card">
+                    <div class="card-content">
+                       <img src="assets/images/Update invoker.png" alt="invoker">
+                       <h1> 
+                        <a href="project-detail.html" target="_blank>">
+                            Update Invoker
+                        </a>
+                    </h1>
+                    <p>Release Date:2023-08-08</p>
+                    <div id="container-desc">
+                        Reworked Captains Mode Draft Order,
+                        Alternative Cast Abilities,
+                        ITEM UPDATES
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-brands fa-bitcoin"></i>
+                    </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-post">Delete</button>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="container-card">
+                    <div class="card-content">
+                       <img src="assets/images/Update invoker.png" alt="invoker">
+                       <h1> 
+                        <a href="project-detail.html" target="_blank>">
+                            Update Invoker
+                        </a>
+                    </h1>
+                    <p>Release Date:2023-08-08</p>
+                    <div id="container-desc">
+                        Reworked Captains Mode Draft Order,
+                        Alternative Cast Abilities,
+                        ITEM UPDATES
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-brands fa-bitcoin"></i>
+                    </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-post">Delete</button>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="container-card">
+                    <div class="card-content">
+                       <img src="assets/images/Update invoker.png" alt="invoker">
+                       <h1> 
+                        <a href="project-detail.html" target="_blank>">
+                            Update Invoker
+                        </a>
+                    </h1>
+                    <p>Release Date:2023-08-08</p>
+                    <div id="container-desc">
+                        Reworked Captains Mode Draft Order,
+                        Alternative Cast Abilities,
+                        ITEM UPDATES
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-brands fa-bitcoin"></i>
+                    </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-post">Delete</button>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="container-card">
+                    <div class="card-content">
+                       <img src="assets/images/Update invoker.png" alt="invoker">
+                       <h1> 
+                        <a href="project-detail.html" target="_blank>">
+                            Update Invoker
+                        </a>
+                    </h1>
+                    <p>Release Date:2023-08-08</p>
+                    <div id="container-desc">
+                        Reworked Captains Mode Draft Order,
+                        Alternative Cast Abilities,
+                        ITEM UPDATES
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-twitch"></i>
+                        <i class="fa-brands fa-bitcoin"></i>
+                    </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-post">Delete</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="assets/js/project.js"></script>
+</body>
+</html>
